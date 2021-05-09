@@ -15,29 +15,31 @@ If r > l
 
 def merge_sort(arr: list):
     n = len(arr)
-    if n <= 1:
-        return arr
+    if n > 1:
+        mid = n // 2
+        left = arr[:mid]
+        right = arr[mid:]
 
-    mid = n // 2
+        merge_sort(left)
+        merge_sort(right)
 
-    left = merge_sort(arr[:mid])
-    right = merge_sort(arr[mid:])
+        i = j = k = 0
+        while i < len(left) and j < len(right):
+            if left[i] < right[j]:
+                arr[k] = left[i]
+                i += 1
+            else:
+                arr[k] = right[j]
+                j += 1
+            k += 1
 
-    res = []
-    i, j = 0, 0
-    while i < len(left) and j < len(right):
-        if left[i] < right[j]:
-            res.append(left[i])
+        while i < len(left):
+            arr[k] = left[i]
             i += 1
-        elif left[i] > right[j]:
-            res.append(right[j])
+            k += 1
+        while j < len(right):
+            arr[k] = right[j]
             j += 1
+            k += 1
 
-    while i < len(left):
-        res.append(left[i])
-        i += 1
-    while j < len(right):
-        res.append(right[j])
-        j += 1
-
-    return res
+    return arr
