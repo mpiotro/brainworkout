@@ -41,5 +41,3 @@ def merge_sort(arr: list):
             arr[k] = right[j]
             j += 1
             k += 1
-
-    return arr
