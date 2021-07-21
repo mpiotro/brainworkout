@@ -1,4 +1,4 @@
-from src.algorithms.search.bubblesort import bubble_sort
+from src.algorithms.sort.bubblesort import bubble_sort
 
 
 class TestBubbleSort:

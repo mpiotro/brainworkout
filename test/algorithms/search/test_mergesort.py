@@ -1,4 +1,4 @@
-from src.algorithms.search.mergesort import merge_sort
+from src.algorithms.sort.mergesort import merge_sort
 
 
 class TestMergeSort:
