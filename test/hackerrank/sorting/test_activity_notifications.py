@@ -1,4 +1,4 @@
-from src.sorting.activity_notifications import activity_notification, merge_sort
+from src.hackerrank.sorting.activity_notifications import activity_notification
 
 
 class TestActivityNotifications:

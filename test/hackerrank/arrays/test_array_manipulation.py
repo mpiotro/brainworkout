@@ -1,4 +1,4 @@
-from src.arrays.array_manipulation import array_manipulation
+from src.hackerrank.arrays.array_manipulation import array_manipulation
 
 
 class TestArrayManipulation:
