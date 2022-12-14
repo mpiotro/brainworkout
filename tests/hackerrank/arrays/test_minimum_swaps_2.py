@@ -1,4 +1,4 @@
-from src.hackerrank.arrays.minimum_swaps_2 import minimum_swaps
+from brainworkout.hackerrank.arrays.minimum_swaps_2 import minimum_swaps
 
 
 class TestMinimumSwaps2:

@@ -1,4 +1,4 @@
-from src.hackerrank.sorting.activity_notifications import activity_notification
+from brainworkout.hackerrank.sorting.activity_notifications import activity_notification
 
 
 class TestActivityNotifications:

@@ -1,4 +1,4 @@
-from src.algorithms.sort.bubblesort import bubble_sort
+from brainworkout.algorithms.sort.bubblesort import bubble_sort
 
 
 class TestBubbleSort:

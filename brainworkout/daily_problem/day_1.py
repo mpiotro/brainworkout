@@ -75,5 +75,3 @@ if __name__ == "__main__":
 
     result = solution_2([1, 1, 1, 1], 2)
     assert result is True
-
-

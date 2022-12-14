@@ -8,10 +8,11 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-# The following test should pass:
+# The following tests should pass:
 #
 # node = Node('root', Node('left', Node('left.left')), Node('right'))
 # assert deserialize(serialize(node)).left.left.val == 'left.left'
+
 
 class Node:
     def __init__(self, val, left=None, right=None):
@@ -22,9 +23,9 @@ class Node:
 
 def serialize(root: Node) -> str:
     if root is None:
-        return '#'
+        return "#"
 
-    return f'{root.val} {serialize(root.left)} {serialize(root.right)}'
+    return f"{root.val} {serialize(root.left)} {serialize(root.right)}"
 
 
 def deserialize(s: str):
@@ -32,19 +33,20 @@ def deserialize(s: str):
 
     def helper():
         v = next(values)
-        if v == '#':
+        if v == "#":
             return None
         n = Node(v)
         n.left = helper()
         n.right = helper()
         return n
+
     return helper()
 
 
 if __name__ == "__main__":
     # node = Node('root', Node('left', Node('left.left')), Node('right'))
-    node = Node('root', Node('left', Node('left.left'), Node('left.right')), Node('right'))
+    node = Node("root", Node("left", Node("left.left"), Node("left.right")), Node("right"))
 
     result = deserialize(serialize(node))
 
-    assert deserialize(serialize(node)).left.left.val == 'left.left'
+    assert deserialize(serialize(node)).left.left.val == "left.left"

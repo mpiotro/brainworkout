@@ -6,6 +6,7 @@
 
 # Follow-up: what if you can't use division?
 
+
 def solution(nums):
     # Generate prefix products
     prefix_products = []
@@ -63,4 +64,3 @@ class TestDailyProblem2:
         data = [3, 0, 4, 0]
         result = solution(data)
         assert result == [0, 0, 0, 0]
-

@@ -1,4 +1,4 @@
-from src.algorithms.sort.mergesort import merge_sort
+from brainworkout.algorithms.sort.mergesort import merge_sort
 
 
 class TestMergeSort:

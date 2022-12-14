@@ -18,14 +18,14 @@ def activity_notification(expenditure, d):
     if expenditure[d] >= 2 * median:
         notifications = notifications + 1
 
-    for i in range(d+1, n):
-        old_element = expenditure[i-d-1]
-        new_element = expenditure[i-1]
+    for i in range(d + 1, n):
+        old_element = expenditure[i - d - 1]
+        new_element = expenditure[i - 1]
         trailing.remove(old_element)
 
         added = False
 
-        for i in range(d-1):
+        for i in range(d - 1):
             if new_element < trailing[i]:
                 trailing.insert(i, new_element)
                 added = True

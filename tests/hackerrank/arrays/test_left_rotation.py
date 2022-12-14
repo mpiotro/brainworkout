@@ -1,4 +1,4 @@
-from src.hackerrank.arrays.left_rotation import rot_left
+from brainworkout.hackerrank.arrays.left_rotation import rot_left
 
 
 class TestLeftRotation:
