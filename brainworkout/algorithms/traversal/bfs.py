@@ -13,7 +13,7 @@ def print_tree(root):
 
     while len(queue) > 0:
 
-        print(queue[0].data)
+        print(queue[0].value)
         node = queue.pop(0)
 
         if node.left is not None:
