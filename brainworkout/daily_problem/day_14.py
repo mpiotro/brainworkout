@@ -19,4 +19,4 @@ def estimate_pi(iterations: int):
     return pi_over_four * 4
 
 
-print(estimate_pi(iterations=100000000))
+print(estimate_pi(iterations=1000000))
